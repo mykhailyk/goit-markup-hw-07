@@ -102,6 +102,10 @@ img {
   color: #000000;
 }
 
+.logo__accent-white {
+  color: #ffffff;
+}
+
 .navigation__list {
   display: flex;
   align-items: center;
@@ -453,62 +457,47 @@ img {
   padding-bottom: 60px;
 }
 
-.footer .container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
 
-.footer-logo {
-  color: var(--active-btn-color);
-  font-family: var(--second-font-family);
-  font-weight: var(--main-font-weight);
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  margin-bottom: 20px;
-  display: block;
-}
-
-.footer-logo-add {
-  color: var(--alternative-text-color);
-}
-
-.adress-list {
+.adress__list {
   color: var(--alternative-text-color);
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.adress-item:not(:last-child) {
+.adress__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.adress-link-map {
+.adress__link-map {
   color: inherit;
   transition-duration: var(--default-transition-duration);
   transition-timing-function: var(--default-transition-timing-function);
 }
 
-.adress-link {
+.adress__link {
   color: rgba(255, 255, 255, 0.6);
   transition-duration: var(--default-transition-duration);
   transition-timing-function: var(--default-transition-timing-function);
 }
 
-.adress-link-map:hover,
-.adress-link:hover,
-.adress-link-map:focus,
-.adress-link:focus {
+.adress__link-map:hover,
+.adress__link:hover,
+.adress__link-map:focus,
+.adress__link:focus {
   color: #2196f3;
 }
 
-.adress-connect {
+.connect {
   margin-left: 70px;
 }
 
-.connect-title {
+.connect__title,
+.connect-form__title {
   font-weight: var(--main-font-weight);
   font-size: 14px;
   line-height: 1.14;
@@ -518,23 +507,23 @@ img {
   margin-bottom: 20px;
 }
 
-.connect-soc-item {
+.connect__socials-item {
   width: 44px;
   height: 44px;
   margin-right: 10px;
 }
 
-.connect-soc-list {
+.connect__socials-list {
   display: flex;
   justify-content: center;
   /* margin-top: 20px; */
 }
 
-.connect-soc-item:last-child {
+.connect__socials-item:last-child {
   margin-right: 0;
 }
 
-.connect-soc-link {
+.connect__socials-link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -546,19 +535,19 @@ img {
   transition-timing-function: var(--default-transition-timing-function);
 }
 
-.connect-soc-icon {
+.connect__socials-icon {
   fill: #fff;
   transition-duration: var(--default-transition-duration);
   transition-timing-function: var(--default-transition-timing-function);
 }
 
-.connect-soc-link:hover,
-.connect-soc-link:focus {
+.connect__socials-link:hover,
+.connect__socials-link:focus {
   background-color: var(--active-btn-color);
 }
 
-.connect-soc-link:hover .connect-soc-icon,
-.connect-soc-link:focus .connect-soc-icon {
+.connect__socials-link:hover .connect-socials-icon,
+.connect__socials-link:focus .connect-socials-icon {
   fill: var(--background-color);
 }
 
@@ -566,13 +555,13 @@ img {
   margin-left: 93px;
 }
 
-.connect-form .connect-field {
+.connect-form .connect-form__field {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.connect-form-input {
+.connect-form__input {
   background-color: #2f303a;
   color: var(--background-color);
   font-weight: 400;
@@ -588,7 +577,7 @@ img {
   transition-timing-function: var(--default-transition-timing-function);
 }
 
-.connect-form-input::placeholder {
+.connect-form__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.3;
@@ -596,17 +585,17 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.connect-form-input:focus,
-.connect-form-input:hover {
+.connect-form__input:focus,
+.connect-form__input:hover {
   border-color: var(--active-btn-color);
   outline: none;
 }
 
-.connect-form-input:focus-visible {
+.connect-form__input:focus-visible {
   border-color: var(--active-btn-color);
 }
 
-.connect-form-btn {
+.connect-form__btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -630,8 +619,8 @@ img {
   transition-timing-function: var(--default-transition-timing-function);
 }
 
-.connect-form-btn:hover,
-.connect-form-btn:focus {
+.connect-form__btn:hover,
+.connect-form__btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--active-btn-color);
   background-color: var(--background-color);
@@ -639,12 +628,12 @@ img {
   fill: var(--active-btn-color);
 }
 
-.connect-form-icon {
+.connect-form__icon {
   margin-left: 10px;
 }
 
-.connect-form-btn:hover .connect-form-icon,
-.connect-form-btn:focus .connect-form-icon {
+.connect-form__btn:hover .connect-form-icon,
+.connect-form__btn:focus .connect-form-icon {
   fill: var(--active-btn-color);
 }
 
