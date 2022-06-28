@@ -17,6 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
@@ -347,32 +348,30 @@
     <footer class="footer">
       <div class="footer__container container">
         <h2 class="footer__title hidden">Футер</h2>
-        <!-- <div class="adress-contact"> -->
         <a href="./index.html" lang="en" class="logo"
           ><span class="logo__accent-blue">Web</span
           ><span class="logo__accent-white">Studio</span></a
         >
-          <address class="adress">
-            <ul class="adress__list list">
-              <li class="adress__item">
-                <a
-                  href="https://goo.gl/maps/ZNNEmPpqHStPW1MP9"
-                  class="adress__link-map link"
-                  target="_blank"
-                  rel="noopener norefererrer"
-                >
-                  г. Киев, пр-т Леси Украинки, 26
-                </a>
-              </li>
-              <li class="adress__item">
-                <a class="adress__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </li>
-              <li class="adress__item">
-                <a class="adress__link link" href="tel:+380961111111">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-        <!-- </div> -->
+        <address class="adress">
+          <ul class="adress__list list">
+            <li class="adress__item">
+              <a
+                href="https://goo.gl/maps/ZNNEmPpqHStPW1MP9"
+                class="adress__link-map link"
+                target="_blank"
+                rel="noopener norefererrer"
+              >
+                г. Киев, пр-т Леси Украинки, 26
+              </a>
+            </li>
+            <li class="adress__item">
+              <a class="adress__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="adress__item">
+              <a class="adress__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
         <div class="connect">
           <h3 class="connect__title">присоединяйтесь</h3>
           <ul class="connect__socials-list list">
@@ -426,37 +425,38 @@
         </div>
       </div>
     </footer>
+    <!---------------BACKDROP MODAL SECTION---------------->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn" data-modal-close>
-          <svg class="modal-close-icon" width="11px" height="11px">
+        <button type="button" class="modal__close-btn" data-modal-close>
+          <svg class="modal__close-icon" width="11px" height="11px">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
         <form>
-          <div class="modal-field">
-            <label for="user-name" class="modal-label">Имя</label>
-            <div class="input-wrap">
+          <div class="modal__field">
+            <label for="user-name" class="modal__label">Имя</label>
+            <div class="modal__wrap">
               <input
                 type="text"
-                class="modal-input"
+                class="modal__input"
                 name="user-name"
                 id="user-name"
                 required
                 minlength="2"
               />
-              <svg class="modal-icon" width="18px" height="18px">
+              <svg class="modal__icon" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-person-modal"></use>
               </svg>
             </div>
           </div>
-          <div class="modal-field">
-            <label for="user-phone" class="modal-label">Телефон</label>
-            <div class="input-wrap">
+          <div class="modal__field">
+            <label for="user-phone" class="modal__label">Телефон</label>
+            <div class="modal__wrap">
               <input
                 type="text"
-                class="modal-input"
+                class="modal__input"
                 id="user-phone"
                 name="user-phone"
                 required
@@ -465,56 +465,56 @@
                 maxlength="13"
                 title="+380 (00) 000-00-00"
               />
-              <svg class="modal-icon" width="18px" height="18px">
+              <svg class="modal__icon" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-phone-modal"></use>
               </svg>
             </div>
           </div>
-          <div class="modal-field">
-            <label for="modal-input" class="modal-label">Почта</label>
-            <div class="input-wrap">
+          <div class="modal__field">
+            <label for="modal-input" class="modal__label">Почта</label>
+            <div class="modal__wrap">
               <input
                 type="text"
-                class="modal-input"
+                class="modal__input"
                 name="user-email"
                 id="modal-input"
                 required
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 title="example@mail.com"
               />
-              <svg class="modal-icon" width="18px" height="18px">
+              <svg class="modal__icon" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-email-modal"></use>
               </svg>
             </div>
           </div>
-          <div class="modal-field">
-            <label for="user-comment" class="modal-label">Комментарий</label>
+          <div class="modal__field">
+            <label for="user-comment" class="modal__label">Комментарий</label>
             <textarea
               name="user-comment"
               id="user-comment"
-              class="modal-input modal-input-comment"
+              class="modal__input modal__input-comment"
               placeholder="Введите текст"
             ></textarea>
           </div>
-          <div class="checkbox-field">
+          <div class="modal-checkbox__field">
             <input
               type="checkbox"
               name="privacy"
               value="true"
-              class="modal-check hidden"
+              class="modal-checkbox__check hidden"
               id="privacy"
             />
-            <label for="privacy" class="check-text">
+            <label for="privacy" class="modal-checkbox__text">
               <span>
-                <svg class="check-icon" width="11px" height="8px">
+                <svg class="modal-checkbox__icon" width="11px" height="8px">
                   <use href="./images/icons.svg#icon-check-modal"></use>
                 </svg>
               </span>
               Соглашаюсь с рассылкой и принимаю
-              <a href="" class="modal-terms-link link">Условия договора</a></label
+              <a href="" class="modal-checkbox__terms-link link">Условия договора</a></label
             >
           </div>
-          <button type="submit" class="modal-send-btn">Отправить</button>
+          <button type="submit" class="modal__send-btn">Отправить</button>
         </form>
       </div>
     </div>
