@@ -16,8 +16,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
@@ -72,7 +72,7 @@
       <!---------------HERO SECTION---------------->
       <section class="hero section">
         <div class="container">
-          <h2 class="hero__title hidden">Заголовок</h2>
+          <h2 class="hero__title hidden">Преимущества</h2>
           <ul class="hero__list list">
             <li class="hero__item">
               <div class="hero__container">
@@ -159,7 +159,7 @@
               <div class="workers">
                 <h3 class="workers__title">Игорь Демьяненко</h3>
                 <p class="workers__text" lang="en">Product Designer</p>
-                <ul class="workers__socials--list list">
+                <ul class="workers__socials-list list">
                   <li class="workers__item">
                     <a href="" class="workers__socials-link link">
                       <svg class="workers__socials-icon" width="20px" height="20px">
@@ -193,7 +193,7 @@
               <div class="workers">
                 <h3 class="workers__title">Ольга Репина</h3>
                 <p class="workers__text" lang="en">Frontend Developer</p>
-                <ul class="workers__socials--list list">
+                <ul class="workers__socials-list list">
                   <li class="workers__item">
                     <a href="" class="workers__socials-link link">
                       <svg class="workers__socials-icon" width="20px" height="20px">
@@ -213,7 +213,7 @@
                         <use href="./images/icons.svg#icon-facebook"></use></svg
                     ></a>
                   </li>
-                  <li class="socials__item">
+                  <li class="workers__item">
                     <a href="" class="workers__socials-link link"
                       ><svg class="workers__socials-icon" width="20px" height="20px">
                         <use href="./images/icons.svg#icon-linkedin"></use></svg
@@ -227,7 +227,7 @@
               <div class="workers">
                 <h3 class="workers__title">Николай Тарасов</h3>
                 <p class="workers__text" lang="en">Marketing</p>
-                <ul class="workers__socials--list list">
+                <ul class="workers__socials-list list">
                   <li class="workers__item">
                     <a href="" class="workers__socials-link link">
                       <svg class="workers__socials-icon" width="20px" height="20px">
@@ -261,7 +261,7 @@
               <div class="workers">
                 <h3 class="workers__title">Михаил Ермаков</h3>
                 <p class="workers__text" lang="en">UI Designer</p>
-                <ul class="workers__socials--list list">
+                <ul class="workers__socials-list list">
                   <li class="workers__item">
                     <a href="" class="workers__socials-link link">
                       <svg class="workers__socials-icon" width="20px" height="20px">
@@ -496,22 +496,22 @@
               placeholder="Введите текст"
             ></textarea>
           </div>
-          <div class="modal-checkbox__field">
+          <div class="checkbox">
             <input
               type="checkbox"
               name="privacy"
               value="true"
-              class="modal-checkbox__check hidden"
+              class="checkbox__check hidden"
               id="privacy"
             />
-            <label for="privacy" class="modal-checkbox__text">
+            <label for="privacy" class="checkbox__text">
               <span>
-                <svg class="modal-checkbox__icon" width="11px" height="8px">
+                <svg class="checkbox__icon" width="11px" height="8px">
                   <use href="./images/icons.svg#icon-check-modal"></use>
                 </svg>
               </span>
               Соглашаюсь с рассылкой и принимаю
-              <a href="" class="modal-checkbox__terms-link link">Условия договора</a></label
+              <a href="" class="checkbox__terms-link link">Условия договора</a></label
             >
           </div>
           <button type="submit" class="modal__send-btn">Отправить</button>
